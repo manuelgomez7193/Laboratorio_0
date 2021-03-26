@@ -32,3 +32,7 @@ int BarcoPasajeros::GetCantPasajeros() const {
     return cantPasajeros;
 }
 
+void BarcoPasajeros::arribar(float cargaDespacho) {
+    //No se realiza ningun cambio porque los barcos de pasajeros no poseen carga
+}
+

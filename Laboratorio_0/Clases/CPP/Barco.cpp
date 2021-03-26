@@ -32,3 +32,7 @@ string Barco::GetNombre() const {
     return nombre;
 }
 
+void Barco::arribar(float cargaDespacho) {
+    
+}
+

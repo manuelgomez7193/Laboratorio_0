@@ -14,6 +14,7 @@ public:
     TipoTamanio GetTamanio() const;
     void SetCantPasajeros(int cantPasajeros);
     int GetCantPasajeros() const;
+    void arribar(float);
 private:
     int cantPasajeros;
     TipoTamanio tamanio;

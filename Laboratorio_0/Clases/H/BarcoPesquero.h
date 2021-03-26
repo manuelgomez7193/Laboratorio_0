@@ -17,6 +17,7 @@ public:
     int GetCarga() const;
     void SetCapacidad(int capacidad);
     int GetCapacidad() const;
+    void arribar(float);
 private:
     int capacidad;
     int carga;

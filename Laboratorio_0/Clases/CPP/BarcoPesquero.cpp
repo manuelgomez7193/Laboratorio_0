@@ -32,3 +32,7 @@ int BarcoPesquero::GetCapacidad() const {
     return capacidad;
 }
 
+void BarcoPesquero::arribar(float cargaDespacho) {
+    this->carga = carga - cargaDespacho;
+}
+

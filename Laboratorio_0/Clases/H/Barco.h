@@ -15,6 +15,7 @@ public:
     string GetId() const;
     void SetNombre(string nombre);
     string GetNombre() const;
+    virtual void arribar(float);
 private:
     string nombre;
     string id;
