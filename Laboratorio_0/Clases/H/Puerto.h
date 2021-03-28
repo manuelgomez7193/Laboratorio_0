@@ -2,6 +2,7 @@
 #define PUERTO_H
 
 #include "../../DataType/H/DtFecha.h"
+#include "../../DataType/H/DtPuerto.h"
 
 #include <string>
 
@@ -13,6 +14,7 @@ public:
     Puerto(const Puerto& orig);
     virtual ~Puerto();
     Puerto(string, string, DtFecha);
+    Puerto(DtPuerto);
     void SetFechaCreacion(DtFecha fechaCreacion);
     DtFecha GetFechaCreacion() const;
     void SetNombre(string nombre);

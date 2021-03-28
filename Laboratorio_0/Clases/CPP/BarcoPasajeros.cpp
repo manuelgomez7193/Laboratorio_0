@@ -16,6 +16,13 @@ BarcoPasajeros::BarcoPasajeros(string Nombre, string Id, int CantPasajeros, Tipo
     this->tamanio = Tamanio;
 }
 
+BarcoPasajeros::BarcoPasajeros(DtBarcoPasajeros barcoPasajeros){
+    this->SetNombre(barcoPasajeros.GetNombre());
+    this->SetId(barcoPasajeros.GetId());
+    this->cantPasajeros = barcoPasajeros.GetCantPasajeros();
+    this->tamanio = barcoPasajeros.GetTamanio();
+}
+
 void BarcoPasajeros::SetTamanio(TipoTamanio tamanio) {
     this->tamanio = tamanio;
 }

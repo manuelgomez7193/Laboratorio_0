@@ -2,6 +2,7 @@
 #define ARRIBO_H
 
 #include "../../DataType/H/DtFecha.h"
+#include "../../DataType/H/DtArribo.h"
 
 class Arribo {
 public:
@@ -9,6 +10,7 @@ public:
     Arribo(const Arribo& orig);
     virtual ~Arribo();
     Arribo(DtFecha,float);
+    Arribo(DtArribo);
     void SetCarga(float carga);
     float GetCarga() const;
     void SetFecha(DtFecha fecha);

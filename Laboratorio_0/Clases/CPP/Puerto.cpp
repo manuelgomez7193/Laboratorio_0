@@ -15,6 +15,12 @@ Puerto::Puerto(string Nombre,string Id,DtFecha Fecha) {
     this->fechaCreacion = Fecha;
 }
 
+Puerto::Puerto(DtPuerto puerto){
+    this->nombre = puerto.GetNombre();
+    this->id = puerto.GetId();
+    this->fechaCreacion = puerto.GetFechaCreacion();
+}
+
 void Puerto::SetFechaCreacion(DtFecha fechaCreacion) {
     this->fechaCreacion = fechaCreacion;
 }

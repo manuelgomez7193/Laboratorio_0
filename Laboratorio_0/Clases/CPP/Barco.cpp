@@ -16,6 +16,11 @@ Barco::Barco(string Nombre, string Id) {
     this->id = Id;
 }
 
+Barco::Barco(DtBarco barco) {
+    this->nombre = barco.GetNombre();
+    this->id = barco.GetId();
+}
+
 void Barco::SetId(string id) {
     this->id = id;
 }

@@ -2,6 +2,7 @@
 #define BARCOPESQUERO_H
 
 #include "Barco.h"
+#include "../../DataType/H/DtBarcoPesquero.h"
 
 #include <string>
 
@@ -13,6 +14,7 @@ public:
     BarcoPesquero(const BarcoPesquero& orig);
     virtual ~BarcoPesquero();
     BarcoPesquero(string, string, int, int);
+    BarcoPesquero(DtBarcoPesquero);
     void SetCarga(int carga);
     int GetCarga() const;
     void SetCapacidad(int capacidad);

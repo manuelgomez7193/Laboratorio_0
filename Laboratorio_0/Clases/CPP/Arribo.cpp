@@ -16,6 +16,11 @@ Arribo::Arribo(DtFecha Fecha,float Carga) {
     this->carga = Carga;
 }
 
+Arribo::Arribo(DtArribo arribo) {
+    this->fecha = arribo.GetFecha();
+    this->carga = arribo.GetCarga();
+}
+
 void Arribo::SetCarga(float carga) {
     this->carga = carga;
 }

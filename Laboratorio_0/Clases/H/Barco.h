@@ -1,6 +1,7 @@
 #ifndef BARCO_H
 #define BARCO_H
 
+#include "../../DataType/H/DtBarco.h"
 #include <string>
 
 using namespace std;
@@ -11,6 +12,7 @@ public:
     Barco(const Barco& orig);
     virtual ~Barco();
     Barco(string, string);
+    Barco(DtBarco);
     void SetId(string id);
     string GetId() const;
     void SetNombre(string nombre);

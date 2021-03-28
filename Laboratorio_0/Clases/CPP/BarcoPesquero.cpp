@@ -16,6 +16,13 @@ BarcoPesquero::BarcoPesquero(string Nombre, string Id, int Capacidad, int Carga)
     this->carga = Carga;
 }
 
+BarcoPesquero::BarcoPesquero(DtBarcoPesquero barcoPesquero){
+    this->SetNombre(barcoPesquero.GetNombre());
+    this->SetId(barcoPesquero.GetId());
+    this->capacidad = barcoPesquero.GetCapacidad();
+    this->carga = barcoPesquero.GetCarga();
+}
+
 void BarcoPesquero::SetCarga(int carga) {
     this->carga = carga;
 }
